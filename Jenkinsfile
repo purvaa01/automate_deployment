@@ -48,7 +48,7 @@ pipeline {
                   docker rm -f $CONTAINER_NAME || true
                   docker run -d \
                     --name $CONTAINER_NAME \
-                    -p 8091:3000 \
+                    -p 8092:3000 \
                     $IMAGE_NAME:latest
                 '''
             }
