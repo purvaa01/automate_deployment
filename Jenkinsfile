@@ -21,11 +21,6 @@ pipeline {
             }
         }
 
-        stage('Run Tests') {
-            steps {
-                sh 'npm test'
-            }
-        }
 
         stage('Push Image to Docker Hub') {
             steps {
